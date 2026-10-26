@@ -10,8 +10,8 @@ def test(self):
     error, status, hex_code = robot.GetSafetyParamsCheckSum()
     print(f"GetSafetyParamsChecksum: error={error}, status={status}, hex_code={hex_code}")
     time.sleep(3)
-    error = robot.SafetyOPPasswordCheck(0, "12345678")
-    print(f"SafetyOPPasswordCheck: error={error}")
+    # error = robot.SafetyOPPasswordCheck(0, "12345678")
+    # print(f"SafetyOPPasswordCheck: error={error}")
 
     if error == 0:
         error = robot.SetAnticollision(mode=0, level=[2.0, 2.0, 2.0, 2.0, 2.0, 2.0], config=1)
